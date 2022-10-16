@@ -13,7 +13,7 @@ namespace 問題集入門_課題08_1
                 total += (i + 1);
             }
 
-            Console.WriteLine(total);
+            Console.WriteLine(total.ToString());
 
             Console.ReadLine();
         }

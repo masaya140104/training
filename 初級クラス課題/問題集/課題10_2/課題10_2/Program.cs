@@ -15,7 +15,7 @@ namespace 問題集入門_課題10_2
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                sw.WriteLine(numbers[i]);
+                sw.WriteLine(numbers[i].ToString());
             }
 
             sw.Close();
