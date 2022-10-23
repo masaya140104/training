@@ -11,7 +11,7 @@ namespace 問題44
                                   { "10", "ニュースバラエティ" }};
 
 
-            for (int i = 0; i < tvProgram.Length / 2; i++)
+            for (int i = 0; i < tvProgram.GetLength(0); i++)
             {
                 if (int.Parse(tvProgram[i, 0]) % 2 == 0)
                 {

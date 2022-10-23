@@ -7,19 +7,19 @@ namespace 問題34
         static void Main(string[] args)
         {
             int i = 10;
-            int s;
+            int j;
 
             while (i > 0)
             {
                 int x = 0;
 
-                s = i;
+                j = i;
 
-                while (s <= 10)
+                while (j <= 10)
                 {
-                    x += s;
+                    x += j;
 
-                    s++;
+                    j++;
                 }
 
                 i--;

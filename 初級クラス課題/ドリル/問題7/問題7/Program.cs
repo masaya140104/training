@@ -18,7 +18,7 @@ namespace 問題7
 
             Console.WriteLine("掛け算すると");
 
-            Console.WriteLine(multiplication);
+            Console.WriteLine(multiplication.ToString());
 
             Console.ReadLine();
         }

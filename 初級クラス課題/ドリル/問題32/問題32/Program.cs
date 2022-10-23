@@ -7,16 +7,16 @@ namespace 問題32
         static void Main(string[] args)
         {
             int i = 9;
-            int s = 0;
+            int j = 0;
 
             while (0 < i)
             {
-                s = 0;
-                while (s < 9)
+                j = 0;
+                while (j < 9)
                 {
-                    Console.WriteLine(i * (s + 1));
+                    Console.WriteLine((i * (j + 1)).ToString());
 
-                    s++;
+                    j++;
                 }
 
                 i--;

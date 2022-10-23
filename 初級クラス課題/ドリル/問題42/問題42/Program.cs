@@ -12,7 +12,7 @@ namespace 問題42
             {
                 if (50 <= points[i] && points[i] < 70)
                 {
-                    Console.WriteLine(points[i]);
+                    Console.WriteLine(points[i].ToString());
                 }
             }
 

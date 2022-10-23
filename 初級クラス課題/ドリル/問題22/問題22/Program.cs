@@ -8,7 +8,7 @@ namespace 問題22
         {
             for (int i = 0; i < 9; i++)
             {
-                Console.WriteLine((i + 1) * 5);
+                Console.WriteLine(((i + 1) * 5).ToString());
             }
 
             Console.ReadLine();

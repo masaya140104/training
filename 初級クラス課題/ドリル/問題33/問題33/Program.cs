@@ -10,9 +10,9 @@ namespace 問題33
             {
                 int x = 0;
 
-                for (int s = i; s < 10; s++)
+                for (int j = i; j < 10; j++)
                 {
-                    x += s + 1;
+                    x += j + 1;
                 }
 
                 Console.WriteLine(x.ToString());

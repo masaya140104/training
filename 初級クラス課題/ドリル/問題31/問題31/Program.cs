@@ -8,9 +8,9 @@ namespace 問題31
         {
             for (int i = 0; i < 9; i++)
             {
-                for (int s = 0; s < 9; s++)
+                for (int j = 0; j < 9; j++)
                 {
-                    Console.WriteLine((i + 1) * (s + 1));
+                    Console.WriteLine(((i + 1) * (j + 1)).ToString());
                 }
             }
 

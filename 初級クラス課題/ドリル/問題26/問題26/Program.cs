@@ -23,7 +23,7 @@ namespace 問題26
             }
 
             Console.WriteLine("0～100までの4倍数の合計は");
-            Console.WriteLine(x);
+            Console.WriteLine(x.ToString());
             Console.WriteLine("です。");
 
             Console.ReadLine();

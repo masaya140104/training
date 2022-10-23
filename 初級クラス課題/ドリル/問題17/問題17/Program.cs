@@ -18,6 +18,11 @@ namespace 問題17
 
             children -= discount;
 
+            if (children < 0)
+            {
+                children = 0;
+            }
+
             int fee = adults * 1500 + children * 750;
 
             Console.WriteLine("料金は");

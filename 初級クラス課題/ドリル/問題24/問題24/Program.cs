@@ -10,7 +10,7 @@ namespace 問題24
 
             while (i < 9)
             {
-                Console.WriteLine((i + 1) * 7);
+                Console.WriteLine(((i + 1) * 7).ToString());
 
                 i++;
             }

@@ -16,7 +16,7 @@ namespace 問題45
 
             Console.WriteLine("指定されたチャンネルは・・・");
 
-            for (int i = 0; i < tvProgram.Length / 2; i++)
+            for (int i = 0; i < tvProgram.GetLength(0); i++)
             {
                 if (channel == int.Parse(tvProgram[i, 0]))
                 {
