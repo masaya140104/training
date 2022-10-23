@@ -28,16 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_sum = new System.Windows.Forms.Button();
+            this.button_end = new System.Windows.Forms.Button();
+            this.listBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // button_sum
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 32;
-            this.listBox1.Items.AddRange(new object[] {
+            this.button_sum.Location = new System.Drawing.Point(187, 331);
+            this.button_sum.Name = "button_sum";
+            this.button_sum.Size = new System.Drawing.Size(150, 46);
+            this.button_sum.TabIndex = 1;
+            this.button_sum.Text = "合計表示";
+            this.button_sum.UseVisualStyleBackColor = true;
+            this.button_sum.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button_end
+            // 
+            this.button_end.Location = new System.Drawing.Point(187, 383);
+            this.button_end.Name = "button_end";
+            this.button_end.Size = new System.Drawing.Size(150, 46);
+            this.button_end.TabIndex = 1;
+            this.button_end.Text = "終了";
+            this.button_end.UseVisualStyleBackColor = true;
+            this.button_end.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // listBox
+            // 
+            this.listBox.FormattingEnabled = true;
+            this.listBox.ItemHeight = 32;
+            this.listBox.Items.AddRange(new object[] {
             "5",
             "10",
             "25",
@@ -58,40 +78,19 @@
             "28",
             "1",
             "39"});
-            this.listBox1.Location = new System.Drawing.Point(97, 21);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(240, 292);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(187, 331);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 46);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "合計表示";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(187, 383);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 46);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "終了";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.listBox.Location = new System.Drawing.Point(187, 23);
+            this.listBox.Name = "listBox";
+            this.listBox.Size = new System.Drawing.Size(240, 292);
+            this.listBox.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBox);
+            this.Controls.Add(this.button_end);
+            this.Controls.Add(this.button_sum);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -99,9 +98,8 @@
         }
 
         #endregion
-
-        private ListBox listBox1;
-        private Button button1;
-        private Button button2;
+        private Button button_sum;
+        private Button button_end;
+        private ListBox listBox;
     }
 }

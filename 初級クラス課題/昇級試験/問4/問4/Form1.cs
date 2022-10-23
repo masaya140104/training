@@ -12,9 +12,9 @@ namespace 問4
             int x = 0;
             int y = 0;
 
-            for (int i = 0; i < this.listBox1.Items.Count; i++)
+            for (int i = 0; i < this.listBox.Items.Count; i++)
             {
-                x = int.Parse(this.listBox1.Items[i].ToString());
+                x = int.Parse(this.listBox.Items[i].ToString());
 
                 if (x >= 21)
                 {
@@ -28,11 +28,6 @@ namespace 問4
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

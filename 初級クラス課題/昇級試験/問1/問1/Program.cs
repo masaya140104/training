@@ -9,9 +9,11 @@ namespace 問1
             Console.WriteLine("消費税込み金額を計算します。");
             Console.WriteLine("金額を入力して、Enterキーを押してください。");
 
-            double price = Math.Floor(1.08 * double.Parse(Console.ReadLine()));
+            double priceDouble = Math.Round(1.08 * double.Parse(Console.ReadLine()));
 
-            Console.WriteLine("税込み" + price.ToString() + "円になります。");
+            int priceInt = (int)priceDouble;
+
+            Console.WriteLine("税込み" + priceInt.ToString() + "円になります。");
 
             Console.ReadLine();
         }
