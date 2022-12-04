@@ -1,0 +1,16 @@
+使われている変数名
+
+greetingHello
+greetingForAlongTime
+name
+greetingGoodEvening
+greetingHowAreYou
+
+
+ディスプレイ上にどのように表示されるか
+
+IF 太郎さん、こんにちは。
+お久しぶりですね。
+IF 太郎さん、こんばんは。
+お元気ですか。
+
