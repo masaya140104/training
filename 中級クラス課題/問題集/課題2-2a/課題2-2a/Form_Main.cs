@@ -25,7 +25,7 @@ namespace 課題2_2a
 
             int x = rand.Next(0, 11);
 
-            MessageBox.Show(sacredLot[x].ToString());
+            MessageBox.Show(sacredLot[x]);
         }
     }
 }

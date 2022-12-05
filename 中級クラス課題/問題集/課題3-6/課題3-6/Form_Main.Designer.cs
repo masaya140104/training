@@ -28,20 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button = new System.Windows.Forms.Button();
             this.label = new System.Windows.Forms.Label();
             this.textBox = new System.Windows.Forms.TextBox();
+            this.button_Execution = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button
-            // 
-            this.button.Location = new System.Drawing.Point(218, 115);
-            this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(150, 46);
-            this.button.TabIndex = 0;
-            this.button.Text = "おみくじを引く";
-            this.button.UseVisualStyleBackColor = true;
-            this.button.Click += new System.EventHandler(this.button1_Click);
             // 
             // label
             // 
@@ -59,14 +49,24 @@
             this.textBox.Size = new System.Drawing.Size(200, 39);
             this.textBox.TabIndex = 2;
             // 
+            // button_Execution
+            // 
+            this.button_Execution.Location = new System.Drawing.Point(236, 131);
+            this.button_Execution.Name = "button_Execution";
+            this.button_Execution.Size = new System.Drawing.Size(150, 46);
+            this.button_Execution.TabIndex = 3;
+            this.button_Execution.Text = "おみくじを引く";
+            this.button_Execution.UseVisualStyleBackColor = true;
+            this.button_Execution.Click += new System.EventHandler(this.button_Execution_Click);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 200);
+            this.Controls.Add(this.button_Execution);
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.label);
-            this.Controls.Add(this.button);
             this.Name = "Form_Main";
             this.Text = "Form_Main";
             this.ResumeLayout(false);
@@ -75,9 +75,8 @@
         }
 
         #endregion
-
-        private Button button;
         private Label label;
         private TextBox textBox;
+        private Button button_Execution;
     }
 }

@@ -25,7 +25,7 @@ namespace 課題2_2a
 
             int x = rand.Next(0, 11);
 
-            MessageBox.Show(textBox.Text + "さん" + "本日の運勢は..."  + "\n" + sacredLot[x].ToString());
+            MessageBox.Show(textBox_Name.Text + "さん" + "本日の運勢は..."  + "\n" + sacredLot[x]);
         }
     }
 }
