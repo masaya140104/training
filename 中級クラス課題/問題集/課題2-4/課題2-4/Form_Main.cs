@@ -14,7 +14,7 @@ namespace 課題2_2a
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamReader sr = new StreamReader(@"C:\Users\tsubo\source\repos\インフィニット・フィールド\training\中級クラス課題\問題集\課題2-4\おみくじ.txt", Encoding.UTF8);
+            StreamReader sr = new StreamReader(@"C:\Users\Public\Documents\おみくじ.txt", Encoding.UTF8);
             
             List<string> list = new List<string>();
             

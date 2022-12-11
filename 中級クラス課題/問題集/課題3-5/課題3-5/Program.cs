@@ -21,7 +21,7 @@ namespace 課題3_5
 
         private static List<string> readFile()
         {           
-            StreamReader sr = new StreamReader(@"C:\Users\tsubo\source\repos\インフィニット・フィールド\training\中級クラス課題\問題集\課題3-5\figureRow.txt", Encoding.UTF8);
+            StreamReader sr = new StreamReader(@"C:\Users\Public\Documents\figureRow.txt", Encoding.UTF8);
 
             List<string> list = new List<string>();
             while (-1 <sr.Peek())

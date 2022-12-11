@@ -20,7 +20,7 @@ namespace 課題2_6a
 
         private void button_Display_Click(object sender, EventArgs e)
         {
-            StreamReader srNames = new StreamReader(@"C:\Users\tsubo\source\repos\インフィニット・フィールド\training\中級クラス課題\問題集\課題2-6b\names.txt", Encoding.UTF8);
+            StreamReader srNames = new StreamReader(@"C:\Users\Public\Documents\names.txt", Encoding.UTF8);
             List<string> listNames = new List<string>();
             while (-1 < srNames.Peek())
             {
@@ -28,7 +28,7 @@ namespace 課題2_6a
             }
             srNames.Close();
 
-            StreamReader srResults = new StreamReader(@"C:\Users\tsubo\source\repos\インフィニット・フィールド\training\中級クラス課題\問題集\課題2-6b\results.txt", Encoding.UTF8);
+            StreamReader srResults = new StreamReader(@"C:\Users\Public\Documents\results.txt", Encoding.UTF8);
             List<string[]> listResults = new List<string[]>();
             while (-1 < srResults.Peek())
             {

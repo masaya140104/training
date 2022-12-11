@@ -19,7 +19,7 @@ namespace 課題3_8
 
         private static List<string[]> readFile()
         {
-            StreamReader sr = new StreamReader(@"C:\Users\tsubo\source\repos\インフィニット・フィールド\training\中級クラス課題\問題集\課題3-8\inu.txt", Encoding.UTF8);
+            StreamReader sr = new StreamReader(@"C:\Users\Public\Documents\inu.txt", Encoding.UTF8);
             
             List<string[]> list = new List<string[]>();
             
