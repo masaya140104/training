@@ -17,7 +17,7 @@ namespace 課題4_1
             string fileData = sr.ReadToEnd();
             sr.Close();
 
-            Console.WriteLine(fileData);
+            Console.Write(fileData);
 
             Console.ReadLine();
         }

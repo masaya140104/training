@@ -19,7 +19,7 @@ namespace 課題3_4
 
         private void button_Display_Click(object sender, EventArgs e)
         {
-            if (this.textBox_Name.Text == "")
+            if (this.textBox_Name.Text == String.Empty)
             {
                 MessageBox.Show("正しい名前を入力してください");
                 return;
@@ -44,7 +44,7 @@ namespace 課題3_4
             }
             else if (month == 4 || month == 6 || month == 9 || month == 11)
             {
-                if (day > 1 || day < 30)
+                if (day < 1 || day > 30)
                 {
                     MessageBox.Show("正しい月日を入力してください");
                     return;
@@ -52,7 +52,7 @@ namespace 課題3_4
             }
             else
             {
-                if (day == 1 || day < 31)
+                if (day < 1 || day > 31)
                 {
                     MessageBox.Show("正しい月日を入力してください");
                     return;
