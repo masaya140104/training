@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace 問題13
+namespace 問題15
 {
-    public partial class Form1 : Form
+    public partial class Form_Main : Form
     {
-        public Form1()
+        public Form_Main()
         {
             InitializeComponent();
         }
@@ -21,6 +21,7 @@ namespace 問題13
         {
             label_Mark.Text = "×";
             textBox_Result.Text = (int.Parse(textBox1.Text) * int.Parse(textBox2.Text)).ToString();
+
         }
 
         private void button_Division_Click(object sender, EventArgs e)

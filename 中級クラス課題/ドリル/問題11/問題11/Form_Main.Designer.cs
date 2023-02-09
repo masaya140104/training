@@ -1,4 +1,4 @@
-﻿namespace 問題9
+﻿namespace 問題11
 {
     partial class Form_Main
     {
@@ -33,9 +33,9 @@
             // 
             // button
             // 
-            this.button.Location = new System.Drawing.Point(315, 189);
+            this.button.Location = new System.Drawing.Point(300, 178);
             this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(171, 39);
+            this.button.Size = new System.Drawing.Size(144, 42);
             this.button.TabIndex = 0;
             this.button.Text = "計算";
             this.button.UseVisualStyleBackColor = true;

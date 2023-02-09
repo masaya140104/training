@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace 問題9
+namespace 問題11
 {
     public partial class Form_Main : Form
     {
@@ -19,7 +19,7 @@ namespace 問題9
 
         private void button_Click(object sender, EventArgs e)
         {
-            MessageBox.Show((1980 - 2000).ToString());
+           MessageBox.Show((198 * 200).ToString());
         }
     }
 }

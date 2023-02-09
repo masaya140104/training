@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace 問題13.Properties
+namespace 問題15.Properties
 {
 
 
