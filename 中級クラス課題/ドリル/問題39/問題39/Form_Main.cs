@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,52 +20,54 @@ namespace 問題39
 
         private void button_Click(object sender, EventArgs e)
         {
-            if (radioButton_Adult.Checked == true)
+            int fare = 0;
+            if (radioButton_Adult.Checked)
             {
-                if (radioButton_Ikebukuro.Checked == true)
+                if (radioButton_Ikebukuro.Checked)
                 {
-                    MessageBox.Show("運賃は150円になります。");
+                    fare = 150;
                 }
-                if (radioButton_Sibuya.Checked == true)
+                if (radioButton_Sibuya.Checked)
                 {
-                    MessageBox.Show("運賃は150円になります。");
+                    fare = 150;
                 }
-                if (radioButton_Sinagawa.Checked == true)
+                if (radioButton_Sinagawa.Checked)
                 {
-                    MessageBox.Show("運賃は190円になります。");
+                    fare = 190;
                 }
-                if (radioButton_Tokyo.Checked == true)
+                if (radioButton_Tokyo.Checked)
                 {
-                    MessageBox.Show("運賃は190円になります。");
+                    fare = 190;
                 }
-                if (radioButton_Ueno.Checked == true)
+                if (radioButton_Ueno.Checked)
                 {
-                    MessageBox.Show("運賃は190円になります。");
+                    fare = 190;
                 }
             }
-            else if (radioButton_Child.Checked == true)
+            else if (radioButton_Child.Checked)
             {
-                if (radioButton_Ikebukuro.Checked == true)
+                if (radioButton_Ikebukuro.Checked)
                 {
-                    MessageBox.Show("運賃は70円になります。");
+                    fare = 70;
                 }
-                if (radioButton_Sibuya.Checked == true)
+                if (radioButton_Sibuya.Checked)
                 {
-                    MessageBox.Show("運賃は70円になります。");
+                    fare = 70;
                 }
-                if (radioButton_Sinagawa.Checked == true)
+                if (radioButton_Sinagawa.Checked)
                 {
-                    MessageBox.Show("運賃は90円になります。");
+                    fare = 90;
                 }
-                if (radioButton_Tokyo.Checked == true)
+                if (radioButton_Tokyo.Checked)
                 {
-                    MessageBox.Show("運賃は90円になります。");
+                    fare = 90;
                 }
-                if (radioButton_Ueno.Checked == true)
+                if (radioButton_Ueno.Checked)
                 {
-                    MessageBox.Show("運賃は90円になります。");
+                    fare = 90;
                 }
             }
+            MessageBox.Show("運賃は" + fare.ToString() + "円になります。");
         }
     }
 }

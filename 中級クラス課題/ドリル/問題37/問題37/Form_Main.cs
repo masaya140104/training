@@ -19,26 +19,12 @@ namespace 問題37
 
         private void checkBox_Male_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox_Male.Checked)
-            {
-                textBox_Male.Enabled = true;
-            }
-            else
-            {
-                textBox_Male.Enabled = false;
-            }
+            textBox_Male.Enabled = checkBox_Male.Checked;
         }
 
         private void checkBox_Female_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox_Female.Checked)
-            {
-                textBox_Female.Enabled = true;
-            }
-            else
-            {
-                textBox_Female.Enabled = false;
-            }
+            textBox_Female.Enabled = checkBox_Female.Checked;
         }
     }
 }

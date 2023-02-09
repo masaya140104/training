@@ -19,26 +19,12 @@ namespace 問題38
 
         private void radioButton_Male_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton_Male.Checked)
-            {
-                textBox_Male.Enabled = true;
-            }
-            else
-            {
-                textBox_Male.Enabled = false;
-            }
+            textBox_Male.Enabled = radioButton_Male.Checked;
         }
 
         private void radioButton_Female_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton_Female.Checked)
-            {
-                textBox_Female.Enabled = true;
-            }
-            else
-            {
-                textBox_Female.Enabled = false;
-            }
+            textBox_Female.Enabled = radioButton_Female.Checked;
         }
     }
 }
