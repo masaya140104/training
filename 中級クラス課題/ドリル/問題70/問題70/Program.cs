@@ -10,11 +10,9 @@ namespace 問題70
     {
         static void Main(string[] args)
         {
-            int count = 0;
-            for (int i = 0; i < 10; i++)
+            for (int count = 0; count < 10; count++)
             {
                 Console.WriteLine("Count = " + count.ToString());
-                count++;
             }
 
             Console.ReadLine();

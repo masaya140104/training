@@ -23,9 +23,10 @@ namespace 問題67
         {
             ArrayList arrayList = new ArrayList();
             StreamReader sr = new StreamReader(@"C:\Users\Public\Documents\name.txt", Encoding.UTF8);
-            for (int i = 0; i < 5; i++)
+            string[] s = sr.ReadToEnd().Split('\n');
+            for (int i = 0; i < s.Length; i++)
             {
-                arrayList.Add(sr.ReadLine());
+                arrayList.Add(s[i]);
             }
 
             string displayText = string.Empty;

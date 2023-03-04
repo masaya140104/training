@@ -21,19 +21,19 @@ namespace 問題55
         private void button_Click(object sender, EventArgs e)
         {
 
-            string[] s = new string[5];
             StreamReader sr = new StreamReader(@"C:\Users\Public\Documents\name.txt", Encoding.UTF8);
-            for (int i = 0; i < 5; i++)
-            {
-                s[i] = sr.ReadLine();
-            }
+            string s = sr.ReadToEnd();
             sr.Close();
 
-            string displayText = string.Empty;
-            for (int i = 0; i < 5; i++)
+
+            string[] arr = s.Split('\n');
+            for (int i = 0; i < arr.Length; i++)
             {
-                displayText += (i + 1).ToString() + "番 " + s[i] + "\n";
+                arr[i] = arr[i].Replace("\n", "");
+                arr[i] = arr[i].Replace("\r", "");
+                arr[i] = (i + 1).ToString() + "番 " + arr[i];
             }
+            string displayText = string.Join("\n", arr);
             MessageBox.Show(displayText);
         }
     }

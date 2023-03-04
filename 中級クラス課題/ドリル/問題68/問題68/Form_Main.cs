@@ -23,15 +23,16 @@ namespace 問題68
         {
             List<string> list = new List<string>();
             StreamReader sr = new StreamReader(@"C:\Users\Public\Documents\name.txt", Encoding.UTF8);
-            for (int i = 0; i < 5; i++)
+            string[] s = sr.ReadToEnd().Split('\n');
+            for (int i = 0; i < s.Length; i++)
             {
-                list.Add(sr.ReadLine());
+                list.Add(s[i]);
             }
 
             string displayText = string.Empty;
             for (int j = 0; j < list.Count; j++)
             {
-                displayText += list[j] + "\n";
+                displayText =  displayText + (j + 1).ToString() + "番 " + list[j] + "\n";
             }
 
             MessageBox.Show(displayText);

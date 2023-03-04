@@ -19,12 +19,8 @@ namespace 問題75
 
         private void button_Click(object sender, EventArgs e)
         {
-            DateTime dt = DateTime.Now;
-            dt = dt.AddMonths(1);
-            string s = dt.ToString("yyyy/MM/01");
-            dt = DateTime.Parse(s);
-            dt = dt.AddDays(-1);
-            label.Text = dt.ToString("今月はdd日");        
+            int this_month_days = DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month);
+            label.Text = ("今月は" + this_month_days.ToString() + "日");        
         }
     }
 }

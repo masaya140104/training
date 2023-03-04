@@ -20,24 +20,19 @@ namespace 問題53
 
         private void button_Click(object sender, EventArgs e)
         {
-            string[,] datas = new string[2, 2];
             StreamReader sr = new StreamReader(@"C:\Users\Public\Documents\name.txt", Encoding.UTF8);
-            for (int i = 0; i < 2; i++)
-            {
-                string[] s = sr.ReadLine().Split(' ');
-                datas[i,0] = s[0];
-                datas[i,1] = s[1];
-            }
+            string s = sr.ReadToEnd();
             sr.Close();
 
-            string displayText = string.Empty;
-            for (int i = 0; i < 2; i++)
+            
+            string[] arr = s.Split('\n');
+            for (int i = 0; i < arr.Length; i++)
             {
-                string[] s = { datas[i, 0], datas[i, 1] } ;
-                string name = s[0];
-                string age = s[1] + "歳";
-                displayText += name + " " + age + "\n";
+                arr[i] = arr[i].Replace("\n", "");
+                arr[i] = arr[i].Replace("\r", "");
+                arr[i] = arr[i] + "歳";
             }
+            string displayText = string.Join("\n", arr);
             MessageBox.Show(displayText);
         }
     }

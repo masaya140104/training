@@ -25,7 +25,7 @@ namespace 問題56
             sr.Close();
 
             string displayText = string.Empty;
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < s.Length; i++)
             {
                 displayText += (i + 1).ToString() + "番 " + s[i] + "\n";
             }

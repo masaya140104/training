@@ -20,13 +20,7 @@ namespace 問題76
         private void button_Click(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
-            string today = dt.ToString("dd");
-            dt = dt.AddMonths(1);
-            string s = dt.ToString("yyyy/MM/01");
-            dt = DateTime.Parse(s);
-            dt = dt.AddDays(-1);
-            string monthEnd = dt.ToString("dd");
-            int result = int.Parse(monthEnd) - int.Parse(today);
+            int result = DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month) - DateTime.Now.Day;
             label.Text = "月末まで" + result.ToString() + "日";
         }
     }
